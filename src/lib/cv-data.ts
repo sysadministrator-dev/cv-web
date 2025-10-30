@@ -80,4 +80,9 @@ export const projects: Project[] = [
     description: 'Led the complete setup and security hardening of the infrastructure for the Commissioner for Human Rights of the Republic of Azerbaijan. Responsible for cybersecurity, IDS/IPS and SIEM configuration, user access control for highly confidential documents, and successful DDoS mitigation.',
     technologies: ['Infrastructure Security', 'SIEM/IDS/IPS', 'DDoS Mitigation', 'Access Control', 'Data Secrecy'],
   },
+  {
+    name: 'AZERTAC - State News Agency Infrastructure',
+    description: 'Architected the entire IT infrastructure for the Azerbaijan State News Agency. Implemented a multi-layered security strategy, conducted comprehensive security audits, and established continuous server monitoring. Responsibilities included threat modeling, incident response planning, and ensuring high availability of critical news services.',
+    technologies: ['Threat Modeling', 'Incident Response', 'Server Hardening', 'High Availability', 'Security Auditing'],
+  },
 ];
