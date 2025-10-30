@@ -1,3 +1,4 @@
+
 import type { Profile, WorkExperience, Certification, Project } from '@/types';
 
 export const profile: Profile = {
@@ -9,7 +10,7 @@ export const profile: Profile = {
     telegram: 'https://t.me/SysAdmin4u',
     location: 'Zaporizhzhia, Ukraine',
     linkedin: 'https://www.linkedin.com/in/elchin-k-36299b380/',
-    github: 'https://github.com/elchinkuliyevsec',
+    github: 'https://github.com/sysadministrator-dev',
   },
 };
 
