@@ -43,6 +43,7 @@ export const certifications: Certification[] = [
     name: 'Microsoft Certified: Solutions Associate (MCSA)',
     issuer: 'Microsoft',
     year: '2018',
+    link: 'https://drive.google.com/file/d/1BkKvI1H4Kiz0CS7hAIjVsAj07iw8Xv87/view?usp=drive_link',
   },
   {
     name: 'Microsoft Certified: Solutions Expert (MCSE)',
