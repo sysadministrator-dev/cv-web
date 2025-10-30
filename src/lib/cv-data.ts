@@ -66,10 +66,9 @@ export const skills: string[] = [
 
 export const projects: Project[] = [
   {
-    name: 'Threat-Intel-Aggregator',
-    description: 'A Python-based tool that aggregates threat intelligence feeds from various open-source platforms into a unified dashboard. Helps in proactive threat hunting.',
-    technologies: ['Python', 'Flask', 'Elasticsearch', 'Docker'],
-    link: 'https://github.com/elchinkuliyevsec/threat-intel-aggregator',
+    name: 'State Mail Infrastructure (gov.az)',
+    description: 'Created and configured the mail infrastructure for a government agency. Configured security, conducted regular security audits and stress tests. Configured white and black lists, security policies and spam filters.',
+    technologies: ['Mail Server Administration', 'Security Auditing', 'Spam Filtering', 'Policy Implementation'],
   },
   {
     name: 'Automated Phishing Response System',
