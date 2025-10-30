@@ -54,6 +54,7 @@ export const certifications: Certification[] = [
     name: 'Microsoft Certified: Trainer (MCT)',
     issuer: 'Microsoft',
     year: '2020',
+    link: 'https://drive.google.com/file/d/1pH36XBgSTldB79_zltUFpzpdn36ttras/view?usp=drive_link',
   },
   {
     name: 'Jr Penetration Tester',
