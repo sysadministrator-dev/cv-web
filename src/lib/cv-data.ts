@@ -30,7 +30,7 @@ export const workExperience: WorkExperience[] = [
   {
     company: 'The Ombudsman Office of Azerbaijan',
     title: 'Cybersecurity Engineer',
-    period: 'Jun 2015 - Dec 2018',
+    period: '2020 - 2022',
     responsibilities: [
       'Led the greenfield deployment and security hardening of the complete IT infrastructure for the Ombudsman Office.',
       'Deployed and configured advanced SIEM and IDS/IPS solutions for real-time threat detection and response.',
