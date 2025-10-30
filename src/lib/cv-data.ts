@@ -49,6 +49,7 @@ export const certifications: Certification[] = [
     name: 'Microsoft Certified: Solutions Expert (MCSE)',
     issuer: 'Microsoft',
     year: '2019',
+    link: 'https://drive.google.com/file/d/1pnUR5Kws4SJdTlprKb9MUj2ey7AyJhpA/view?usp=drive_link',
   },
   {
     name: 'Microsoft Certified: Trainer (MCT)',
