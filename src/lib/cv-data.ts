@@ -52,20 +52,16 @@ export const education: Education[] = [
 ];
 
 export const skills: string[] = [
-  'Incident Response',
-  'SIEM (Splunk, ELK Stack)',
-  'Penetration Testing',
-  'Vulnerability Assessment',
-  'Network Security',
-  'Firewall Management',
-  'Intrusion Detection Systems (IDS)',
-  'Cryptography',
-  'Python',
-  'Bash Scripting',
-  'ISO 27001',
-  'NIST Framework',
-  'Cloud Security (AWS, Azure)',
-  'Malware Analysis',
+  'Network Security & Firewalls',
+  'Threat Detection & Incident Response (SIEM, SOAR, EDR)',
+  'Vulnerability Assessment & Penetration Testing',
+  'Risk Management & Compliance',
+  'Cloud Security (Azure, AWS, Google Cloud)',
+  'Identity & Access Management (AD, Azure AD, IAM, MFA)',
+  'Security Automation & Scripting (Python, PowerShell, Bash)',
+  'Malware Analysis & Forensics',
+  'Zero Trust Architecture & Endpoint Protection',
+  'Security Policy Development & Awareness Training',
 ];
 
 export const projects: Project[] = [
