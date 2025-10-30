@@ -2,7 +2,6 @@ import Image from 'next/image';
 import {
   Briefcase,
   Code2,
-  Download,
   Github,
   Award,
   Linkedin,
@@ -54,13 +53,13 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-4 flex items-center gap-4">
-            <Button asChild variant="outline" size="sm">
+            <Button asChild variant="outline" size="sm" className="no-print">
               <a href={profile.contact.linkedin} target="_blank" rel="noopener noreferrer">
                 <Linkedin size={16} />
                 <span className="ml-2">LinkedIn</span>
               </a>
             </Button>
-            <Button asChild variant="outline" size="sm">
+            <Button asChild variant="outline" size="sm" className="no-print">
               <a href={profile.contact.github} target="_blank" rel="noopener noreferrer">
                 <Github size={16} />
                 <span className="ml-2">GitHub</span>
@@ -69,7 +68,9 @@ export default function Home() {
             <AtsButton />
           </div>
         </div>
-        <ThemeToggle />
+        <div className="no-print">
+            <ThemeToggle />
+        </div>
       </header>
 
       <main className="space-y-12">

@@ -87,3 +87,24 @@ body {
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  header, footer, .no-print {
+    display: none;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  .printable-area {
+    padding: 2rem;
+  }
+  .card {
+    border: 1px solid #e2e8f0;
+    box-shadow: none;
+  }
+}
