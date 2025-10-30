@@ -16,25 +16,27 @@ export const profile: Profile = {
 
 export const workExperience: WorkExperience[] = [
   {
-    company: 'SecureNet Solutions',
-    title: 'Senior Cybersecurity Analyst',
+    company: 'AZERTAC - State News Agency',
+    title: 'Lead Infrastructure & Security Architect',
     period: 'Jan 2019 - Present',
     responsibilities: [
-      'Led the incident response team, reducing mean time to resolution (MTTR) by 40%.',
-      'Engineered and deployed a new SIEM solution, improving threat detection capabilities by 60%.',
-      'Conducted regular penetration testing and vulnerability assessments on corporate infrastructure.',
-      'Developed and enforced security policies and procedures across the organization.',
+      'Architected and led the greenfield deployment of the entire IT infrastructure for the national news agency.',
+      'Implemented a multi-layered defense-in-depth security strategy, including comprehensive server hardening and network segmentation to protect critical assets.',
+      'Established a continuous monitoring framework using Zabbix and Grafana, providing real-time visibility into system health and security posture.',
+      'Developed and executed comprehensive threat modeling exercises and created robust incident response plans to ensure service integrity and high availability.',
+      'Conducted regular security audits and vulnerability assessments to identify and mitigate potential risks proactively.',
     ],
   },
   {
-    company: 'CyberCorp Inc.',
-    title: 'Network Security Engineer',
+    company: 'The Ombudsman Office of Azerbaijan',
+    title: 'Cybersecurity Engineer',
     period: 'Jun 2015 - Dec 2018',
     responsibilities: [
-      'Managed and configured firewalls, VPNs, and intrusion detection/prevention systems.',
-      'Monitored network traffic for suspicious activity and potential threats.',
-      'Assisted in the investigation and analysis of security breaches.',
-      'Provided security awareness training to employees.',
+      'Led the greenfield deployment and security hardening of the complete IT infrastructure for the Ombudsman Office.',
+      'Deployed and configured advanced SIEM and IDS/IPS solutions for real-time threat detection and response.',
+      'Designed and implemented a stringent least-privilege access control model using advanced IAM solutions to protect highly confidential documents.',
+      'Successfully engineered and executed a multi-faceted DDoS mitigation strategy to ensure the continuous availability of public-facing services.',
+      'Ensured the secrecy and integrity of sensitive data through robust encryption and data loss prevention (DLP) policies.',
     ],
   },
 ];
