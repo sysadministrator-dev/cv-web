@@ -40,19 +40,19 @@ export const workExperience: WorkExperience[] = [
 
 export const certifications: Certification[] = [
   {
-    name: 'Certified Information Systems Security Professional (CISSP)',
-    issuer: 'ISC²',
-    year: '2021',
+    name: 'Microsoft Certified: Solutions Associate (MCSA)',
+    issuer: 'Microsoft',
+    year: '2018',
   },
   {
-    name: 'Certified Ethical Hacker (CEH)',
-    issuer: 'EC-Council',
-    year: '2020',
+    name: 'Microsoft Certified: Solutions Expert (MCSE)',
+    issuer: 'Microsoft',
+    year: '2019',
   },
     {
-    name: 'CompTIA Security+',
-    issuer: 'CompTIA',
-    year: '2019',
+    name: 'Microsoft Certified Trainer (MCT)',
+    issuer: 'Microsoft',
+    year: '2020',
   },
 ];
 
