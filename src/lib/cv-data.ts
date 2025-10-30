@@ -71,9 +71,8 @@ export const projects: Project[] = [
     technologies: ['Mail Server Administration', 'Security Auditing', 'Spam Filtering', 'Policy Implementation'],
   },
   {
-    name: 'Automated Phishing Response System',
-    description: 'Developed a script to automate the analysis of reported phishing emails, extract indicators of compromise (IOCs), and block them at the network edge.',
-    technologies: ['Python', 'Office 365 API', 'PowerShell'],
-    link: 'https://github.com/elchinkuliyevsec/phishing-response',
+    name: 'Corporate Mail Solution (*.az)',
+    description: 'Engineered a secure mail system for a major organization. Implemented robust security measures, including routine audits and performance stress testing. Managed email flow control with allowlists, blocklists, and advanced spam filtering policies.',
+    technologies: ['Secure Email Gateway', 'Performance Tuning', 'Threat Analysis', 'Infrastructure Design'],
   },
 ];
