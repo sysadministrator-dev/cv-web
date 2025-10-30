@@ -8,7 +8,7 @@ import {
   Linkedin,
   Mail,
   MapPin,
-  Phone,
+  Send,
   ShieldCheck,
 } from 'lucide-react';
 import { profile, workExperience, education, skills, projects } from '@/lib/cv-data';
@@ -42,9 +42,9 @@ export default function Home() {
               <Mail size={16} />
               <span>{profile.contact.email}</span>
             </a>
-            <a href={`tel:${profile.contact.phone}`} className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Phone size={16} />
-              <span>{profile.contact.phone}</span>
+            <a href={profile.contact.telegram} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <Send size={16} />
+              <span>Telegram</span>
             </a>
             <div className="flex items-center gap-2">
               <MapPin size={16} />

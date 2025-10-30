@@ -6,7 +6,7 @@ export const profile: Profile = {
   summary: 'A highly motivated and experienced Cybersecurity Specialist with over 8 years of experience in threat analysis, network security, and incident response. Proven ability to protect organizational assets by identifying and mitigating security vulnerabilities. Seeking to leverage expertise in a challenging role within a forward-thinking organization.',
   contact: {
     email: 'elchin.kuliyev95@gmail.com',
-    phone: '+1 (555) 123-4567',
+    telegram: 'https://t.me/SysAdmin4u',
     location: 'San Francisco, CA',
     linkedin: 'https://linkedin.com/in/elchinkuliyevsec',
     github: 'https://github.com/elchinkuliyevsec',
