@@ -17,6 +17,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { AtsButton } from '@/components/ats-button';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const profileImage = PlaceHolderImages.find((img) => img.id === 'profile-picture');
 
@@ -67,6 +68,7 @@ export default function Home() {
             <AtsButton />
           </div>
         </div>
+        <ThemeToggle />
       </header>
 
       <main className="space-y-12">
