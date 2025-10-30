@@ -22,6 +22,7 @@ export type Certification = {
   name: string;
   issuer: string;
   year: string;
+  link?: string;
 };
 
 export type Project = {

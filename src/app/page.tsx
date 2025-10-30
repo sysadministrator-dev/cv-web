@@ -10,6 +10,7 @@ import {
   MapPin,
   Send,
   ShieldCheck,
+  ExternalLink,
 } from 'lucide-react';
 import { profile, workExperience, certifications, skills, projects } from '@/lib/cv-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -155,7 +156,14 @@ export default function Home() {
               <Card key={index}>
                 <CardContent className="pt-6 flex justify-between items-center">
                   <div>
-                    <p className="font-semibold text-lg">{cert.name}</p>
+                    {cert.link ? (
+                      <a href={cert.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-semibold text-lg hover:underline hover:text-accent">
+                        {cert.name}
+                        <ExternalLink size={16} />
+                      </a>
+                    ) : (
+                      <p className="font-semibold text-lg">{cert.name}</p>
+                    )}
                     <p className="text-accent">{cert.issuer}</p>
                   </div>
                   <p className="text-sm text-muted-foreground">{cert.year}</p>

@@ -58,6 +58,7 @@ export const certifications: Certification[] = [
     name: 'Jr Penetration Tester',
     issuer: 'TryHackMe',
     year: '2021',
+    link: 'https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-XKWGH6IECR.pdf',
   },
 ];
 
