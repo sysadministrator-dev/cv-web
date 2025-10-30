@@ -8,7 +8,7 @@ export const profile: Profile = {
     email: 'elchin.kuliyev95@gmail.com',
     telegram: 'https://t.me/SysAdmin4u',
     location: 'Zaporizhzhia, Ukraine',
-    linkedin: 'https://linkedin.com/in/elchinkuliyevsec',
+    linkedin: 'https://www.linkedin.com/in/elchin-k-36299b380/',
     github: 'https://github.com/elchinkuliyevsec',
   },
 };
