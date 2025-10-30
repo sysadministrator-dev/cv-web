@@ -3,7 +3,7 @@ import type {NextConfig} from 'next';
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/my-cv/' : undefined,
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/cv-web/' : undefined,
   typescript: {
     ignoreBuildErrors: true,
   },
