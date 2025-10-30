@@ -3,7 +3,7 @@
 import { useTransition } from 'react';
 import { Download, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { getAtsOptimizedPdf } from '@/app/actions';
+import { getAtsOptimizedText } from '@/app/actions';
 import { useToast } from '@/hooks/use-toast';
 
 export function AtsButton() {
@@ -23,27 +23,21 @@ export function AtsButton() {
       }
       const webCvContent = cvContentElement.outerHTML;
       
-      const result = await getAtsOptimizedPdf({ webCvContent });
+      const result = await getAtsOptimizedText({ webCvContent });
 
       if (result.error) {
         toast({
           variant: 'destructive',
-          title: 'PDF Generation Failed',
+          title: 'Generation Failed',
           description: result.error,
         });
-      } else if (result.atsOptimizedPdf) {
+      } else if (result.atsOptimizedText) {
         try {
-          const byteCharacters = atob(result.atsOptimizedPdf);
-          const byteNumbers = new Array(byteCharacters.length);
-          for (let i = 0; i < byteCharacters.length; i++) {
-            byteNumbers[i] = byteCharacters.charCodeAt(i);
-          }
-          const byteArray = new Uint8Array(byteNumbers);
-          const blob = new Blob([byteArray], { type: 'application/pdf' });
+          const blob = new Blob([result.atsOptimizedText], { type: 'text/plain' });
           const url = window.URL.createObjectURL(blob);
           const a = document.createElement('a');
           a.href = url;
-          a.download = 'CyberSecure_Profile_ATS.pdf';
+          a.download = 'CyberSecure_Profile_ATS.txt';
           document.body.appendChild(a);
           a.click();
           a.remove();
@@ -52,7 +46,7 @@ export function AtsButton() {
              toast({
               variant: 'destructive',
               title: 'Download Error',
-              description: 'Failed to process and download the PDF. The generated content may be invalid.',
+              description: 'Failed to process and download the file.',
             });
         }
       }
@@ -66,7 +60,7 @@ export function AtsButton() {
       ) : (
         <Download className="mr-2 h-4 w-4" />
       )}
-      {isPending ? 'Generating...' : 'ATS-Optimized PDF'}
+      {isPending ? 'Generating...' : 'ATS-Optimized TXT'}
     </Button>
   );
 }

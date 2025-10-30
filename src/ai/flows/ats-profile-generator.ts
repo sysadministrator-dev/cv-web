@@ -1,7 +1,7 @@
 'use server';
 
 /**
- * @fileOverview Flow to generate an ATS-optimized PDF version of a web CV using AI.
+ * @fileOverview Flow to generate an ATS-optimized text version of a web CV using AI.
  *
  * - generateAtsProfile - A function that handles the generation of the ATS profile.
  * - AtsProfileInput - The input type for the generateAtsProfile function.
@@ -19,10 +19,10 @@ const AtsProfileInputSchema = z.object({
 export type AtsProfileInput = z.infer<typeof AtsProfileInputSchema>;
 
 const AtsProfileOutputSchema = z.object({
-  atsOptimizedPdf: z
+  atsOptimizedText: z
     .string()
     .describe(
-      'The ATS-optimized PDF of the web CV in base64 format.'
+      'The ATS-optimized plain text of the web CV.'
     ),
 });
 export type AtsProfileOutput = z.infer<typeof AtsProfileOutputSchema>;
@@ -37,8 +37,8 @@ const prompt = ai.definePrompt({
   output: {schema: AtsProfileOutputSchema},
   prompt: `You are an AI-powered tool that optimizes web CV content for Applicant Tracking Systems (ATS).
 
-  Given the HTML content of a web CV, analyze the content and generate an ATS-optimized PDF version of the CV.
-  Return the PDF content as a base64 encoded string.
+  Given the HTML content of a web CV, analyze the content and generate an ATS-optimized plain text version of the CV.
+  Focus on extracting and formatting the key information like contact details, summary, experience, skills, and projects into a clean, text-only format.
 
   Web CV Content: {{{webCvContent}}}`,
 });
@@ -50,11 +50,9 @@ const atsProfileGeneratorFlow = ai.defineFlow(
     outputSchema: AtsProfileOutputSchema,
   },
   async input => {
-    // TODO: Add PDF generation logic here, possibly using a service.
-    // For now, just return the input content as a placeholder.
     const {output} = await prompt(input);
     return {
-      atsOptimizedPdf: output!.atsOptimizedPdf,
+      atsOptimizedText: output!.atsOptimizedText,
     };
   }
 );
