@@ -3,7 +3,7 @@ import type { Profile, WorkExperience, Education, Project } from '@/types';
 export const profile: Profile = {
   name: 'Elchin Kuliyev',
   title: 'Senior Cybersecurity Specialist',
-  summary: 'A highly motivated and experienced Cybersecurity Specialist with over 8 years of experience in threat analysis, network security, and incident response. Proven ability to protect organizational assets by identifying and mitigating security vulnerabilities. Seeking to leverage expertise in a challenging role within a forward-thinking organization.',
+  summary: 'I am a Senior Cybersecurity Specialist with deep expertise in network defense, threat detection, and incident response, experienced in securing enterprise infrastructures through vulnerability management, penetration testing, and implementation of ISO 27001 and NIST CSF standards. Proficient in cloud security, identity management, and automation using PowerShell and Python, I focus on building resilient systems, reducing risk exposure, and ensuring data integrity across complex environments.',
   contact: {
     email: 'elchin.kuliyev95@gmail.com',
     telegram: 'https://t.me/SysAdmin4u',
