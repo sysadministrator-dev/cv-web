@@ -1,15 +1,15 @@
 import type { Profile, WorkExperience, Education, Project } from '@/types';
 
 export const profile: Profile = {
-  name: 'Alex Volkov',
+  name: 'Elchin Kuliyev',
   title: 'Senior Cybersecurity Specialist',
   summary: 'A highly motivated and experienced Cybersecurity Specialist with over 8 years of experience in threat analysis, network security, and incident response. Proven ability to protect organizational assets by identifying and mitigating security vulnerabilities. Seeking to leverage expertise in a challenging role within a forward-thinking organization.',
   contact: {
-    email: 'alex.volkov.sec@email.com',
+    email: 'elchin.kuliyev.sec@email.com',
     phone: '+1 (555) 123-4567',
     location: 'San Francisco, CA',
-    linkedin: 'https://linkedin.com/in/alexvolkovsec',
-    github: 'https://github.com/alexvolkovsec',
+    linkedin: 'https://linkedin.com/in/elchinkuliyevsec',
+    github: 'https://github.com/elchinkuliyevsec',
   },
 };
 
@@ -73,12 +73,12 @@ export const projects: Project[] = [
     name: 'Threat-Intel-Aggregator',
     description: 'A Python-based tool that aggregates threat intelligence feeds from various open-source platforms into a unified dashboard. Helps in proactive threat hunting.',
     technologies: ['Python', 'Flask', 'Elasticsearch', 'Docker'],
-    link: 'https://github.com/alexvolkovsec/threat-intel-aggregator',
+    link: 'https://github.com/elchinkuliyevsec/threat-intel-aggregator',
   },
   {
     name: 'Automated Phishing Response System',
     description: 'Developed a script to automate the analysis of reported phishing emails, extract indicators of compromise (IOCs), and block them at the network edge.',
     technologies: ['Python', 'Office 365 API', 'PowerShell'],
-    link: 'https://github.com/alexvolkovsec/phishing-response',
+    link: 'https://github.com/elchinkuliyevsec/phishing-response',
   },
 ];
