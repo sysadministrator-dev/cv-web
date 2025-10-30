@@ -66,7 +66,7 @@ export const skills: string[] = [
 
 export const projects: Project[] = [
   {
-    name: 'State Mail Infrastructure (gov.az)',
+    name: 'State Mail Infrastructure (*.gov.az)',
     description: 'Created and configured the mail infrastructure for a government agency. Configured security, conducted regular security audits and stress tests. Configured white and black lists, security policies and spam filters.',
     technologies: ['Mail Server Administration', 'Security Auditing', 'Spam Filtering', 'Policy Implementation'],
   },
