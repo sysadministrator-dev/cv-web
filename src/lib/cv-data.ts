@@ -75,4 +75,9 @@ export const projects: Project[] = [
     description: 'Engineered a secure mail system for a major organization. Implemented robust security measures, including routine audits and performance stress testing. Managed email flow control with allowlists, blocklists, and advanced spam filtering policies.',
     technologies: ['Secure Email Gateway', 'Performance Tuning', 'Threat Analysis', 'Infrastructure Design'],
   },
+  {
+    name: 'Azerbaijan Ombudsman Infrastructure Security',
+    description: 'Led the complete setup and security hardening of the infrastructure for the Commissioner for Human Rights of the Republic of Azerbaijan. Responsible for cybersecurity, IDS/IPS and SIEM configuration, user access control for highly confidential documents, and successful DDoS mitigation.',
+    technologies: ['Infrastructure Security', 'SIEM/IDS/IPS', 'DDoS Mitigation', 'Access Control', 'Data Secrecy'],
+  },
 ];
