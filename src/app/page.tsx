@@ -4,14 +4,14 @@ import {
   Code2,
   Download,
   Github,
-  GraduationCap,
+  Award,
   Linkedin,
   Mail,
   MapPin,
   Send,
   ShieldCheck,
 } from 'lucide-react';
-import { profile, workExperience, education, skills, projects } from '@/lib/cv-data';
+import { profile, workExperience, certifications, skills, projects } from '@/lib/cv-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -148,17 +148,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="education">
-          <h2 className="text-3xl font-headline font-bold text-primary mb-6 flex items-center gap-3"><GraduationCap /> Education</h2>
+        <section id="certifications">
+          <h2 className="text-3xl font-headline font-bold text-primary mb-6 flex items-center gap-3"><Award /> Certifications</h2>
           <div className="space-y-4">
-            {education.map((edu, index) => (
+            {certifications.map((cert, index) => (
               <Card key={index}>
                 <CardContent className="pt-6 flex justify-between items-center">
                   <div>
-                    <p className="font-semibold text-lg">{edu.degree}</p>
-                    <p className="text-accent">{edu.institution}</p>
+                    <p className="font-semibold text-lg">{cert.name}</p>
+                    <p className="text-accent">{cert.issuer}</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">{edu.year}</p>
+                  <p className="text-sm text-muted-foreground">{cert.year}</p>
                 </CardContent>
               </Card>
             ))}

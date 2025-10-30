@@ -1,4 +1,4 @@
-import type { Profile, WorkExperience, Education, Project } from '@/types';
+import type { Profile, WorkExperience, Certification, Project } from '@/types';
 
 export const profile: Profile = {
   name: 'Elchin Kuliyev',
@@ -38,16 +38,21 @@ export const workExperience: WorkExperience[] = [
   },
 ];
 
-export const education: Education[] = [
+export const certifications: Certification[] = [
   {
-    institution: 'Stanford University',
-    degree: 'M.S. in Computer Science, Specialization in Cybersecurity',
-    year: '2015',
+    name: 'Certified Information Systems Security Professional (CISSP)',
+    issuer: 'ISC²',
+    year: '2021',
   },
   {
-    institution: 'University of California, Berkeley',
-    degree: 'B.S. in Electrical Engineering and Computer Sciences',
-    year: '2013',
+    name: 'Certified Ethical Hacker (CEH)',
+    issuer: 'EC-Council',
+    year: '2020',
+  },
+    {
+    name: 'CompTIA Security+',
+    issuer: 'CompTIA',
+    year: '2019',
   },
 ];
 

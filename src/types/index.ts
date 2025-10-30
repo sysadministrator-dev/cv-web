@@ -18,9 +18,9 @@ export type WorkExperience = {
   responsibilities: string[];
 };
 
-export type Education = {
-  institution: string;
-  degree: string;
+export type Certification = {
+  name: string;
+  issuer: string;
   year: string;
 };
 
