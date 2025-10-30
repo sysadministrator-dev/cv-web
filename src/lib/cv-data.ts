@@ -49,10 +49,15 @@ export const certifications: Certification[] = [
     issuer: 'Microsoft',
     year: '2019',
   },
-    {
-    name: 'Microsoft Certified Trainer (MCT)',
+  {
+    name: 'Microsoft Certified: Trainer (MCT)',
     issuer: 'Microsoft',
     year: '2020',
+  },
+  {
+    name: 'Jr Penetration Tester',
+    issuer: 'TryHackMe',
+    year: '2021',
   },
 ];
 
